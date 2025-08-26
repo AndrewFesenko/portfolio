@@ -160,13 +160,8 @@ const expCards = [
         logoPath: "images/pbsccirc.png",
         title: "Application Support Specalist — Palm Beach State College",
         date: "August 2025 – Present",
-        // responsibilities: [
-        //     "Built a secure upload portal using Box APIs.",
-        //     "Let users create folders and upload files without Box accounts, reducing needed licenses.",
-        //     "Built API integrations to sync JotForm data with internal databases.",
-        //     "Automated paper-based workflows into secure online forms.",
-        //     "Helped improve navigation, page, and app layouts based on student/employee feedback.",
-        // ],
+        responsibilities: [
+        ],
     },
     {
         tools: [
