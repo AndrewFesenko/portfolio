@@ -151,6 +151,25 @@ const techStackIcons = [
 const expCards = [
     {
         tools: [
+            { name: "C#", icon: "images/csharp.png" },
+            { name: "JavaScript", icon: "images/javascript.png" },
+            { name: "SQL", icon: "assets/sql.svg" },
+            { name: "Azure", icon: "assets/azure.svg" },
+        ],
+        imgPath: "images/pbsc_site.png",
+        logoPath: "images/pbsccirc.png",
+        title: "Application Support Specalist — Palm Beach State College",
+        date: "August 2025 – Present",
+        // responsibilities: [
+        //     "Built a secure upload portal using Box APIs.",
+        //     "Let users create folders and upload files without Box accounts, reducing needed licenses.",
+        //     "Built API integrations to sync JotForm data with internal databases.",
+        //     "Automated paper-based workflows into secure online forms.",
+        //     "Helped improve navigation, page, and app layouts based on student/employee feedback.",
+        // ],
+    },
+    {
+        tools: [
             { name: "Unity", icon: "images/unity.svg" },
             { name: "C#", icon: "images/csharp.png" },
             { name: "Blender", icon: "images/blender.png" },
@@ -177,7 +196,7 @@ const expCards = [
         imgPath: "images/pbsc_site.png",
         logoPath: "images/pbsccirc.png",
         title: "Web Development Intern — Palm Beach State College",
-        date: "June 2024 – Present",
+        date: "June 2024 – June 2025",
         responsibilities: [
             "Built a secure upload portal using Box APIs.",
             "Let users create folders and upload files without Box accounts, reducing needed licenses.",
@@ -371,8 +390,8 @@ export const myProjects = [
         desc: 'A computer vision system that analyzes basketball games using object detection, tracking, and deep learning. Built to explore how AI can extract tactical insights from real footage using YOLOv8, keypoint detection, and perspective transforms.',
         subdesc:
             'The system detects players and ball in live footage, assigns team colors using zero-shot classification, and maps real-world positions to a top-down court. Stats like ball possession, passes, and player movement are automatically tracked. Built in Python using OpenCV, NumPy, and Hugging Face APIs.',
-        href: '',
-        texture: 'textures/project/coming_soon.mp4',
+        href: 'https://github.com/AndrewFesenko/ai-basketball-analytics',
+        texture: 'textures/project/aibasketball.mp4',
         logo: 'assets/basketball_logo.png',
         logoStyle: {
             backgroundColor: '#0e1a1f',
