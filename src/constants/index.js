@@ -94,7 +94,7 @@ const abilities = [
 
 const techStackImgs = [
     {
-        name: "React Developer",
+        name: "Full Stack Apps",
         imgPath: "images/logos/react.png",
     },
     {
@@ -117,13 +117,13 @@ const techStackImgs = [
 
 const techStackIcons = [
     {
-        name: "React & Frontend",
+        name: "Full Stack Apps",
         modelPath: "/models/react_logo-final.glb",
         scale: 1,
         rotation: [0, 0, 0],
     },
     {
-        name: "Python Projects",
+        name: "Python / Computer Vision",
         modelPath: "/models/python-transformed.glb",
         scale: 0.8,
         rotation: [0, 0, 0],
@@ -135,9 +135,9 @@ const techStackIcons = [
         rotation: [0, -Math.PI / 2, 0],
     },
     {
-        name: "Interactive Development",
-        modelPath: "/models/three.js-transformed.glb",
-        scale: 0.05,
+        name: "Embedded Systems",
+        modelPath: "/models/cpp-logo.glb",
+        scale: 50,
         rotation: [0, 0, 0],
     },
     {
@@ -278,6 +278,26 @@ export {
 
 export const myProjects = [
     {
+        title: 'Aegis – AI-Powered PPE Compliance Access System',
+        desc: 'An embedded AI-driven access control system that verifies required safety equipment before allowing entry into robotics and lab environments.',
+        subdesc:
+            'Aegis combines an ESP32-based authentication interface with RFID and keypad input, a YOLO-based computer vision pipeline for PPE detection, and a real-time dashboard for monitoring compliance events. The system integrates embedded hardware, machine learning inference, and backend coordination to enforce safety policies automatically.',
+        href: 'https://github.com/AndrewFesenko/Aegis',
+        texture: 'textures/project/aegis.mp4',
+        logo: 'assets/aegis.png',
+        logoStyle: {
+            backgroundColor: '#0e1a1f',
+            border: '1px solid #1e2b31',
+            boxShadow: '0 0 30px rgba(80, 200, 255, 0.25)'
+        },
+        spotlight: 'assets/spotlight2.png',
+        tags: [
+            { id: 1, name: 'ESP32', path: 'assets/esp32.svg' },
+            { id: 2, name: 'YOLO', path: 'assets/yolo.png' },
+            { id: 3, name: 'Python', path: 'assets/python.svg' },
+        ],
+    },
+    {
         title: 'EchoHire – AI-Powered Mock Interview Platform',
         desc: 'An interactive mock interview platform that simulates real job interviews through voice, built using Next.js, Firebase, Vapi AI, and the Google Gemini API. Created to explore voice interfaces and conversational AI in a full-stack environment. The platform allows users to practice interviews with AI-generated questions, receive real-time feedback, and access personalized performance analytics.',
         subdesc:
@@ -312,6 +332,26 @@ export const myProjects = [
                 name: 'Firebase ',
                 path: 'assets/firebase.png',
             },
+        ],
+    },
+    {
+        title: 'GatorChef – Smart Pantry-to-Meal Planning Platform',
+        desc: 'A full-stack meal planning platform that converts pantry items or grocery receipts into budget-friendly meal recommendations for students.',
+        subdesc:
+            'Built with React, FastAPI, and Firebase, GatorChef matches available ingredients to realistic recipes and generates shopping lists for missing items. The system integrates OCR-based receipt parsing, pantry tracking, authentication, and cloud storage to simplify meal planning under real student constraints.',
+        href: 'https://github.com/AndrewFesenko/GatorChef',
+        texture: 'textures/project/coming_soon.mp4',
+        logo: 'assets/gatorchef.png',
+        logoStyle: {
+            backgroundColor: '#0e1a1f',
+            border: '1px solid #1e2b31',
+            boxShadow: '0 0 30px rgba(120, 180, 255, 0.25)'
+        },
+        spotlight: 'assets/spotlight2.png',
+        tags: [
+            { id: 1, name: 'React', path: 'assets/react.svg' },
+            { id: 2, name: 'FastAPI', path: 'assets/python.svg' },
+            { id: 3, name: 'Firebase', path: 'assets/firebase.png' },
         ],
     },
     {
@@ -484,7 +524,7 @@ export const aboutMeTopics = [
         subtitle: "Hey, I'm Andrew Fesenko",
         description: "I've been into computers for as long as I can remember. I built my first PC when I was a kid, and that pretty much lit the spark. I started out in a Java bootcamp, learned how to mod Minecraft, and I haven’t stopped building since.\n" +
             "\n" +
-            "Over the past few years, I’ve worked on everything from web platforms to embedded projects and AI tools. Now I'm especially interested in systems that sit close to the hardware — digital logic, embedded design, and real-time systems.\n" +
+            "Over the past few years, I’ve worked on everything from web platforms to embedded projects and AI tools. Now I'm especially interested in systems that sit close to the hardware — digital logic, embedded design, robotics, and real-time systems.\n" +
             "\n" +
             "I like solving problems by building actual things, and I’m always trying to get better at connecting code with the physical world.",
     }
@@ -505,11 +545,11 @@ export const aboutMeTopics = [
         title: "Now",
         subtitle: "What I'm Working On",
         description: [
-            "Building Day Zero, a mobile app that helps track habits and daily goals.",
-            "Testing IoT sensor nodes with ESP32s for a home automation idea.",
-            "Working on a new platform for UF's Gators for Refugee Medical Relief Tutoring Program.",
-            "Learning more about Docker, AWS, and CI/CD workflows.",
-            "Balancing project time with school, the gym, and everything else life throws at me."
+            "Building Scouty, a perception-driven mobile robotics platform that splits vision, control, and sensing across Raspberry Pi and microcontrollers.",
+            "Testing ESP32-based sensor nodes for a home automation system.",
+            "Working on a tutoring platform for UF’s Gators for Refugee Medical Relief program.",
+            "Developing interactive VR statics simulations in the GLaDE Lab.",
+            "Spending more time working closer to the hardware through digital design and SoC coursework."
         ]
     },
     {
@@ -521,7 +561,7 @@ export const aboutMeTopics = [
             { src: "images/photos/pcb.jpg", caption: "My first self-designed PCB: built for a personal project using the ESP32." },
             { src: "images/photos/weld.JPG", caption: "Welded for the first time nearly seven years ago with my dad." },
             { src: "images/photos/dad.JPG", caption: "Me and my dad. He’s the reason I like building things." },
-            { src: "images/photos/dog.JPG", caption: "Project supervisor."},
+            { src: "images/photos/dog.JPG", caption: "Project supervisor." },
             { src: "images/photos/concert.jpg", caption: "My first ever concert." },
             { src: "images/photos/clash_base.PNG", caption: "Years of progress and no regrets." },
         ],
